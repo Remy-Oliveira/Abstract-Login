@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Abstrato</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!--CADASTRO-->
+
+        <div class="registerBox">
+            <form class="registerForm">
+                <h2 class="WelcomeRegister">BEM VINDO</h2>
+                <h2 class="infoRegister">Novo Login</h2>
+                <h2 class="createCadastro">CADASTRAR</h2>
+
+                <div class="inputBox">
+                    <input type="text" id="name" required>
+                    <label for="name">USUARIO</label>
+                    <i class='bx bx-user'></i>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" id="email" required>
+                    <label for="text">E-MAIL</label>
+                    <i class='bx bx-envelope'></i>
+                </div>
+
+                <div class="inputBox">
+                    <input type="password" id="password" required>
+                    <label for="password">PASSWORD</label>
+                    <i class='bx bx-lock'></i>
+                </div>
+
+                <div class="inputBoxButton">
+                    <input type="button" value="Criar Conta" class="creaetCont" onclick="criarConta()">
+                </div>
+
+                <div class="iconsRegister">
+                    <i class='bx bx-envelope' style='color:red'></i>
+                    <i class='bx bxl-telegram' style='color:#254aed'></i>
+                    <i class='bx bxl-whatsapp' style='color:#25ed27'></i>
+                </div>
+            </form>
+        </div>
+
+        <!--LOGIN-->
+
+        <div class="loginBox">
+            <form class="loginForm  ">
+                <h2 class="inforLogin">SPACE FONK</h2>
+
+                <div class="inputBox">
+                    <input type="text" id="name" required>
+                    <label for="name">USUARIO</label>
+                    <i class='bx bx-user'></i>
+                </div>
+
+                <div class="inputBox">
+                    <input type="password" id="password" required>
+                    <label for="password">PASSWORD</label>
+                    <i class='bx bx-lock'></i>
+                </div>
+
+                <span>
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Lembrar</label>
+                    <a href="#">Esqueceu senha</a>
+                </span>
+
+                <div class="acessar"><input type="submit" value="Entrar"></div>
+
+                <div class="acabou"><input type="button" value="Voltar" onclick="voltar()"></div>
+
+
+                <div class="iconsRegister">
+                    <i class='bx bxl-facebook-circle' style='color:#0a1bfe'></i>
+                    <i class='bx bxl-tiktok'></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-twitter'></i>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>

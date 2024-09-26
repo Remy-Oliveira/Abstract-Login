@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #312f56;
+
+}
+
+body {
+    background: url(background.jpg) no-repeat;
+    background-size: cover;
+    background-position: calc(30%) calc(54%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    height: 320px;
+    width: 550px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px 2px rgba(0, 0, 0, 0.306);
+    overflow: hidden;
+}
+
+/* Register settings */
+
+.registerBox {
+    height: 320px;
+    width: 300px;
+    border-right: 1px solid rgba(255, 255, 255, 0.34);
+    transition: .5s;
+    left: 0;
+}
+
+.registerForm {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.WelcomeRegister {
+    font-weight: 300;
+    margin-top: 30px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.infoRegister {
+    width: 100%;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+.infoRegister::before {
+    position: absolute;
+    content: "";
+    top: 46%;
+    border-bottom: 2px solid black;
+    height: 10px;
+    width: 40px;
+}
+
+.createCadastro {
+    position: absolute;
+    filter: blur(90px);
+    transition: .5s;
+    transform: translateX(-1050%);
+}
+
+.registerBox .inputBoxButton {
+    width: 100%;
+    text-align: center;
+}
+
+.registerBox .inputBox {
+    filter: blur(30px);
+    transition: 1s;
+    transform: translateY(400%);
+    position: absolute;
+}
+
+.creaetCont {
+    border-radius: 20px;
+    padding: 3px 25px;
+    font-size: 0.5rem;
+    letter-spacing: .5px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.476);
+    font-weight: 700;
+    transition: .3s;
+    background-color: rgba(255, 255, 255, 0.52);
+}
+
+.creaetCont:hover {
+    transition: .3s;
+    letter-spacing: .9px;
+    background-color: #312f56;
+    color: white;
+}
+
+
+.iconsRegister i {
+    margin: 0 2p;
+    border-radius: 50%;
+    background-color: aliceblue;
+    padding: 4px;
+    position: relative;
+}
+
+.iconsRegister i:hover {
+    transition: .5s;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.296);
+}
+
+
+/* Login settings */
+
+.loginBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.loginForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.inforLogin {
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.loginForm .inputBox {
+    position: relative;
+    width: 55%;
+}
+
+.loginForm .inputBox input {
+    border-radius: 20px;
+    padding: 4px 0;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #312f56;
+    text-align: center;
+}
+
+.loginForm .inputBox i {
+    position: absolute;
+    left: 15px;
+    top: 20%;
+    transition: .5s;
+}
+
+.loginForm .inputBox input:focus~i {
+    transition: .5s;
+    top: -66%;
+}
+
+.loginForm .inputBox input:valid~i {
+    transition: .5s;
+    top: -66%;
+}
+
+.loginForm .inputBox label {
+    position: absolute;
+    pointer-events: none;
+    bottom: 5px;
+    left: 40px;
+    font-size: 0.7rem;
+    transition: .5s;
+    letter-spacing: 1px;
+    border-left: 1px solid black;
+    padding-left: 12px;
+}
+
+.loginForm .inputBox input:hover~label {
+    letter-spacing: 2px;
+}
+
+.loginForm .inputBox input:focus~label {
+    transition: .5s;
+    bottom: 30px;
+    font-size: 0.6rem;
+}
+
+.loginForm .inputBox input:valid~label {
+    transition: .5s;
+    bottom: 30px;
+    font-size: 0.6rem;
+}
+
+span {
+    width: 75%;
+    font-size: 0.6rem;
+    text-align: center;
+    position: relative;
+}
+
+span #checkbox {
+    position: relative;
+    bottom: -3px;
+    left: -3px;
+}
+
+span a {
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+span a:hover {
+    text-decoration: underline;
+}
+
+.loginForm input {
+    padding: 2px 35px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 400;
+    font-size: .7rem;
+    border: none;
+    transition: .2s;
+    background-color: rgba(255, 255, 255, 0.442);
+}
+
+.loginForm input:hover {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.acessar input {
+    cursor: pointer;
+    transition: .2s;
+    background-color: #312f56;
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.36);
+}
+
+.acessar input:hover {
+    letter-spacing: 1.5px;
+    transition: .2s;
+    background-color: #413e77;
+}
+
+.loginForm .iconsRegister {
+    margin-bottom: 10px;
+}
+
+
+.loginForm .acabou {
+    position: absolute;
+    transition: 1s;
+    transform: translateY(-850%);
+}
+
+
+
+/* Sai os dois formularios */
+
+
+
+
+
+.ativar .loginBox {
+    transition: .5s;
+    transform: translateX(-137%);
+}
+
+.ativar .loginBox .iconsRegister,
+.ativar .loginBox .inputBox,
+.ativar .loginBox span,
+.ativar .acessar {
+    transition: 1s;
+    transform: translateX(-837%);
+    filter: blur(200px);
+}
+
+
+
+
+
+.ativar .inforLogin {
+    transition: 0.5;
+    filter: blur(0);
+    transform: translateX(0%);
+}
+
+.ativar .acabou {
+    transition: 1s;
+    transform: translateY(0);
+}
+
+.ativar .acabou input {
+    cursor: pointer;
+    transition: .2s;
+    background-color: #312f56;
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.36);
+}
+
+.ativar .acabou input:hover {
+    letter-spacing: 1.5px;
+    transition: .2s;
+    background-color: #413e77;
+}
+
+/* TELA DE CADASTRO */
+
+.ativar .registerBox {
+    width: 140%;
+    height: 110%;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    transition: .8s;
+    transition-delay: .3s;
+    left: 43%;
+    border-left: 1px solid rgba(255, 255, 255, 0.476);
+}
+
+.ativar .registerForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+
+}
+
+.ativar .WelcomeRegister,
+.ativar .infoRegister {
+    filter: blur(50px);
+    transition: 1s;
+    transform: translateY(900%);
+}
+
+.ativar .createCadastro {
+    transition: 1s;
+    transform: translateX(0);
+    top: 13%;
+    color: black;
+    filter: blur(0);
+}
+
+.ativar .registerBox .inputBox {
+    filter: blur(0);
+    transition: 1s;
+    transform: translateY(-51%);
+    position: relative;
+    margin: 10px 0;
+}
+
+.ativar .registerForm .inputBox input {
+    border-radius: 20px;
+    padding: 4px 0;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #312f56;
+    text-align: center;
+    margin: 0px 0px;
+    position: relative;
+    top: -30px;
+    background-color: rgba(255, 255, 255, 0.315);
+}
+
+.ativar .registerForm .inputBox label {
+    position: absolute;
+    pointer-events: none;
+    bottom: 36px;
+    left: 40px;
+    font-size: 0.7rem;
+    transition: .5s;
+    letter-spacing: 1px;
+    border-left: 1px solid black;
+    padding-left: 12px;
+}
+
+.ativar .registerForm input:hover~label {
+    letter-spacing: 2px;
+}
+
+.ativar .registerForm input:focus~label,
+.ativar .registerForm input:valid~label {
+    transition: .5s;
+    bottom: 65px;
+    font-size: 0.6rem;
+}
+
+
+.ativar .registerForm input:focus~i,
+.ativar .registerForm input:valid~i {
+    transition: .5s;
+    top: -185%;
+}
+
+.ativar .registerForm .inputBox i {
+    position: absolute;
+    left: 15px;
+    top: -94%;
+    transition: .5s;
+}
+
+.ativar .creaetCont {
+    border-radius: 20px;
+    padding: 3px 25px;
+    font-size: 0.5rem;
+    letter-spacing: .5px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.476);
+    font-weight: 700;
+    transition: .3s;
+    background-color: rgba(255, 255, 255, 0.52);
+    position: relative;
+    bottom: 58px;
+}
+
+.ativar .iconsRegister {
+    position: absolute;
+    top: 87%;
+    transition: 1s;
+
+}
+
+.ativar .creaetCont:hover {
+    transition: .3s;
+    letter-spacing: .9px;
+    background-color: #312f56;
+    color: white;
+}
